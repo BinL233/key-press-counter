@@ -4,6 +4,7 @@
   "description": "Tools for monitoring keyboard usage in VSCode.",
   "version": "0.0.1",
   "publisher": "BinL",
+  "icon": "images/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/BinL233/key-press-counter"
