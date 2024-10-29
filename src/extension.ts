@@ -24,10 +24,35 @@ export function activate(context: vscode.ExtensionContext) {
     });
 
     let setInfoShowNum = vscode.commands.registerCommand('key-press-counter.setInfoShowNum', () => {
-        
+        vscode.window
+        .showInputBox({
+            prompt: 'Set the number of times you press the keyboard every time to receive a message.',
+            placeHolder: 'Enter number',
+            validateInput: validateInput
+        })
+        .then(value => {
+            infoShowNum = Number(value);
+            counter.updateInfoShowNum(infoShowNum);
+        });
+    });
+
+    let resetCounter = vscode.commands.registerCommand('key-press-counter.resetCounter', () => {
+        count = 0;
+        counter.updateCount(count);
     });
 
 	context.subscriptions.push(isActive);
+    context.subscriptions.push(setInfoShowNum);
+    context.subscriptions.push(resetCounter);
+}
+
+function validateInput(value: string) {
+    let numericValue = parseInt(value);
+    if (isNaN(numericValue)) {
+        return 'Minutes has to be in the form of a valid number';
+    } else {
+        return null;
+    }
 }
 
 export function deactivate() {}
