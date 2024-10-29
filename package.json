@@ -3,19 +3,23 @@
   "displayName": "KeyPressCounter",
   "description": "Tools for monitoring keyboard usage in VSCode.",
   "version": "0.0.1",
+  "publisher": "BinL",
+  "repository": "https://github.com/BinL233/key-press-counter",
   "engines": {
     "vscode": "^1.94.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "key-press-counter.helloWorld",
-        "title": "Hello World"
+        "command": "key-press-counter.toggle",
+        "title": "KeyPressCounter Active/Inactive"
       }
     ]
   },
