@@ -26,8 +26,8 @@
         "title": "KeyPressCounter: Active/Inactive"
       },
       {
-        "command": "key-press-counter.setInfoShowNum",
-        "title": "KeyPressCounter: Keyboard count Message"
+        "command": "key-press-counter.setMsgPushNum",
+        "title": "KeyPressCounter: Set message push count"
       },
       {
         "command": "key-press-counter.resetCounter",

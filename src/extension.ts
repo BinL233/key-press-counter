@@ -23,7 +23,7 @@ export function activate(context: vscode.ExtensionContext) {
         }
     });
 
-    let setInfoShowNum = vscode.commands.registerCommand('key-press-counter.setInfoShowNum', () => {
+    let setMsgPushNum = vscode.commands.registerCommand('key-press-counter.setMsgPushNum', () => {
         vscode.window
         .showInputBox({
             prompt: 'Set the number of times you press the keyboard every time to receive a message.',
@@ -42,14 +42,14 @@ export function activate(context: vscode.ExtensionContext) {
     });
 
 	context.subscriptions.push(isActive);
-    context.subscriptions.push(setInfoShowNum);
+    context.subscriptions.push(setMsgPushNum);
     context.subscriptions.push(resetCounter);
 }
 
 function validateInput(value: string) {
     let numericValue = parseInt(value);
     if (isNaN(numericValue)) {
-        return 'Minutes has to be in the form of a valid number';
+        return 'Input need to be a valid number';
     } else {
         return null;
     }

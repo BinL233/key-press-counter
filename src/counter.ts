@@ -18,11 +18,11 @@ export default class Counter {
             this._statusBarItem.text = `Key Count: ${this._count}`;
             
             if (this._count % this._infoShowNum == 0) {
-                vscode.window.showInformationMessage(`Keyboard pressed ${this._count} times!`);
+                vscode.window.showInformationMessage(`🏅 Keyboard pressed ${this._count} times!`);
             }
         }
     }
-
+    
     public updateInfoShowNum(newInfoShowNum: number) {
         this._infoShowNum = newInfoShowNum;
     }
