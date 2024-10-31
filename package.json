@@ -2,7 +2,7 @@
   "name": "key-press-counter",
   "displayName": "KeyPressCounter",
   "description": "Tools for monitoring keyboard usage in VSCode.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "BinL233",
   "icon": "images/icon.png",
   "repository": {
