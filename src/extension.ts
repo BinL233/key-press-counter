@@ -24,8 +24,15 @@ export function activate(context: vscode.ExtensionContext) {
     vscode.window.onDidChangeTextEditorSelection((event) => {
         if (active) {
             counter.keyPress(event);
-            globalState.update('count', counter._totalCount);
-            console.log(globalState.get('count'))
+
+            let tempCount = globalState.get('count', totalCount);
+            console.log(tempCount);
+            if (tempCount + 1 > counter._totalCount) {
+                globalState.update('count', tempCount + 1);
+                counter._totalCount = tempCount + 1;
+            } else {
+                globalState.update('count', counter._totalCount);
+            }
         }
     });
 

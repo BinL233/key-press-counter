@@ -30,5 +30,16 @@ There are 2 counters in this extension.
 
 ### 0.0.1
 
-Initial release of key-press-counter!
+1. Initial release of key-press-counter!
 
+### 0.1.0
+
+1. A new persistent counter which can record all your key presses even you restart vscode.
+
+2. Original counter be the Current Session Counter, which helps record the key presses in current session.
+
+3. Reset Counter command helps reset the Current Session Counter.
+
+### 0.1.1
+
+1. Fixed multi-windows counter problems.
