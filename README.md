@@ -1,4 +1,4 @@
-# key-press-counter README
+# key-press-counter
 
 This is a keyboard press counter.
 
@@ -9,6 +9,10 @@ Do you sometimes want to know how many times of keys you pressed in VSCode or yo
 ## Features
 
 ### Key Press Monitor
+There are 2 counters in this extension.
+- The left one is **total key press counter**. It will record all your key presses in vscode.
+- The right one (eg.`+16`) is **current session key press counter**. It just record your key presses in current session.
+
 ![counter](images/image-3.gif)
 
 ### Notification
@@ -20,7 +24,7 @@ Do you sometimes want to know how many times of keys you pressed in VSCode or yo
 |---|---|---|
 | KeyPressCounter: Active/Inactive | Active | Decide the counter to monitor key presses or not. |
 | KeyPressCounter: Set message push count | 500 | Set the number of times you press the keyboard every time to receive a message. |
-| KeyPressCounter: Reset Counter | | Set the counter number to 0. |
+| KeyPressCounter: Reset current session counter | | Set the current session counter number to 0. |
 
 ## Release Notes
 

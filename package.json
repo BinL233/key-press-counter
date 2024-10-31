@@ -30,8 +30,8 @@
         "title": "KeyPressCounter: Set message push count"
       },
       {
-        "command": "key-press-counter.resetCounter",
-        "title": "KeyPressCounter: Reset Counter"
+        "command": "key-press-counter.resetCurrentCounter",
+        "title": "KeyPressCounter: Reset current session counter"
       }
     ]
   },
